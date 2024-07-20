@@ -60,10 +60,10 @@
                 <span class="author-block">
                   <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Keling Yao</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Seth Z. Zhao</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Seth Z. Zhao</a><sup>*</sup>,</span>
                   </span>
               <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Chuanyu Pan</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Chuanyu Pan</a><sup>*</sup>,</span>
                   </span>
               <span class="author-block">
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Chenfeng Xu</a>,
@@ -83,7 +83,8 @@
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="author-block">University of California, Berkeley <br>
+                      The Chinese University of Hong Kong, Shenzhen<br>DMLR Workshop ICML 2024</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
@@ -91,7 +92,7 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2309.13570.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -102,18 +103,18 @@
 
                     <!-- Supplementary PDF link -->
                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
+                      <a href="https://drive.google.com/drive/folders/1U7YJKSrlWOY5h2MJRc_cwJPkQ8600jbd" target="_blank"
+                         class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-database"></i>
+                        </span>
+                        <span>Dataset</span>
+                      </a>
+                    </span>
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/augcog/DTTD2" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -124,7 +125,7 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/abs/2309.13570" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -147,12 +148,12 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/TEST.mov"
         type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
+      <!-- <h2 class="subtitle has-text-centered">
         Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+      </h2> -->
     </div>
   </div>
 </section>
@@ -166,9 +167,36 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Robust 6DoF pose estimation with mobile devices
+            is the foundation for applications in robotics, augmented
+            reality, and digital twin localization. In
+            this paper, we extensively investigate the robustness
+            of existing RGBD-based 6DoF pose estimation
+            methods against varying levels of depth sensor
+            noise. We highlight that existing 6DoF pose
+            estimation methods suffer significant performance
+            discrepancies due to depth measurement inaccuracies.
+            In response to the robustness issue, we
+            present a simple and effective transformer-based
+            6DoF pose estimation approach called DTTDNet,
+            featuring a novel geometric feature filtering
+            module and a Chamfer distance loss for training.
+            Moreover, we advance the field of robust
+            6DoF pose estimation and introduce a new dataset
+            – Digital Twin Tracking Dataset Mobile (DTTDMobile),
+            tailored for digital twin object tracking
+            with noisy depth data from the mobile RGBD sensor
+            suite of the Apple iPhone 14 Pro. Extensive
+            experiments demonstrate that DTTDNet significantly
+            outperforms state-of-the-art methods at
+            least 4.32, up to 60.74 points in ADD metrics
+            on the DTTD-Mobile. More importantly, our approach
+            exhibits superior robustness to varying
+            levels of measurement noise, setting a new benchmark
+            for the robustness to noise measurements.
           </p>
         </div>
+        <img src="static/images/head.png" alt="MY ALT TEXT"/>
       </div>
     </div>
   </div>
@@ -179,34 +207,46 @@
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
+    <div class="container is-max-desktop content">
+      <h2 class="title is-3">DTTD-Mobile Dataset</h2>
+    </p>We introduce DTTD-Mobile as a novel digital-twin
+    pose estimation dataset captured with mobile devices.
+    We provide in-depth LiDAR depth analysis and evaluation
+    metrics to illustrate the unique properties and
+    complexities of mobile LiDAR data.
+  </p>
+    </div>
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/dataset.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Left: Setup of our data acquisition pipeline. Right: 3D models of the 18 objects in DTTD-Mobile.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/dataset_detailed.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Sample visualizations of our dataset. First row: Annotations for 3D bounding boxes. Second row: Corresponding semantic
+segmentation labels. Third row: Zoomed-in LiDAR depth visualizations.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/noise.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+          Visualization of an iPhone LiDAR depth scene that
+          shows distortion and long-tail non-Gaussian noise (highlighted
+          inside the red box). (a) Front view. (b) Left view. (c) Right view.
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/images/table1.png" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        Features and statistics of different datasets.
       </h2>
     </div>
   </div>
@@ -215,53 +255,93 @@
 </section>
 <!-- End image carousel -->
 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop content">
+      <h2 class="title is-3">DTTDNet</h2>
+    </p>We propose a new transformer-based 6DoF pose estimator
+    with depth-robust designs on modality fusion
+    and training strategies, called DTTDNet. We introduce two modules,
+    Chamfer Distance Loss (CDL) and Geometric Feature Filtering
+    (GFF), that enable the point-cloud encoder in DTTDNet
+    to handle noisy and low-resolution LiDAR data robustly.
+  </p>
+  <img src="static/images/model.png" alt="MY ALT TEXT"/>
+    </div>
+  </div>
+</section>
 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop content">
+      <h2 class="title is-3">Experiments Results</h2>
+    </div>
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/result1.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Qualitative evaluation of different methods. To further validate our approach, we provide visual evidence of our model’s
+effectiveness in challenging occlusion scenarios and varying lighting conditions, where other models’ predictions fail but ours remain
+reliable.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/reslut2.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Comparison with diverse 6DoF pose estimation baselines on DTTD-Mobile dataset. We showcase AUC results of ADD-S
+and ADD on all 18 objects, higher is better. Based on considered 4 baselines, our model significantly improves the accuracy on most
+objects. Note that the left-most column indicates the per-object depth-ADD error.
+        </h2>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
             <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
@@ -269,7 +349,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
@@ -296,7 +376,14 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@misc{DTTDv2,
+        title={Robust Digital-Twin Localization via An RGBD-based Transformer Network and A Comprehensive Evaluation on a Mobile Dataset}, 
+        author={Zixun Huang and Keling Yao and Seth Z. Zhao and Chuanyu Pan and Tianjian Xu and Weiyu Feng and Allen Y. Yang},
+        year={2023},
+        eprint={2309.13570},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}
+  }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -309,9 +396,11 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+
+            This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
+            <br>Website source code based on the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page. If you want to reuse their source code, please credit them appropriately.
+
           </p>
 
         </div>
